@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	padding: 25px;
+	background: linear-gradient(to bottom right, #261d1f, #463735);
+	height: 100vh;
+}
+
+.main_content {
+	background-color: white;
+	margin: 24px 64px 112px 48px;
+	height: 74%;
+}
+
+
+.picture {
+
+overflow: hidden;
+height: 100%;
+
+}
+
+
+img {
+
+	
+	height: 100%;
+	display: inline-block;
+	
+}
