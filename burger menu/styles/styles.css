@@ -5,30 +5,142 @@
 }
 
 .wrapper {
-	padding: 25px;
+	padding-top: 125px;
 	background: linear-gradient(to bottom right, #261d1f, #463735);
 	height: 100vh;
+
 }
 
 .main_content {
+	display: flex;
 	background-color: white;
-	margin: 24px 64px 112px 48px;
-	height: 74%;
+	margin: 0 auto;
+	width: 940px;
+	min-height: 400px;
+			position: relative;
+
 }
 
 
 .picture {
-
-overflow: hidden;
-height: 100%;
+width: 330px;
+height: auto;
+position: relative;
 
 }
 
 
 img {
 
-	
+	object-fit: contain;
+	object-position: left;
+	display:block;
+	width: 100%;
 	height: 100%;
-	display: inline-block;
+}
+
+.main_text{
+/*	background-color: lightgray;
+*/	width: 610px;
+
 	
+}
+.title{
+/*	background-color: lightcoral;
+*/	text-align: center;
+	font-size: 1.5em;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.text_menu {
+/*	background-color: red;
+*/display: flex;
+flex-flow: row wrap;
+margin:0px 80px;
+justify-content: center;
+
+}
+.product_card {
+	border-bottom: 2px solid gray;
+	width: 200px;
+	height: 100px;
+	padding: 25px ;
+	text-align: center;
+}
+
+.product_card:nth-child(odd) {
+	margin-right: 50px;
+}
+.name {
+	text-transform: uppercase;
+/*	background-color: lightpink;
+*/	font-size: 1.5em;
+	font-weight: 600;
+
+}
+
+.price{
+/*	background-color: lightcyan;
+*/	font-size: 20px;
+	font-weight:700;
+	color: gray;
+
+}
+span 
+{
+		text-transform: uppercase;
+
+}
+
+div.product_card::after {
+	content: '';
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background-color: gray;
+	transform: rotate(45deg);
+	margin-top: 19px;
+}
+
+button {
+	width: 175px;
+	height: 55px;
+	background-color: black;
+	text-transform: uppercase;
+	color: white;
+	position: absolute;
+	right: 0;
+	bottom:0;
+	margin-bottom: -65px;
+}
+
+.itallian {
+	width: 340px;
+	height: 215px;
+	background-color: black;
+	color: white;
+	font-size: 2.5em;
+	line-height: 0.75;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 35px;
+	margin-left: -20px;
+	padding: 40px
+}
+
+.sign {
+	text-align: center;
+}
+.promo {
+	font-size: 1rem;
+	color: yellow;
+	padding-top: 20px;
+}
+
+span.p {
+	color: white;
 }
