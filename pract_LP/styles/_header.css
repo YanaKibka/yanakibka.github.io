@@ -1,0 +1,89 @@
+/*Styles for page header*/
+
+.page-header {
+	min-height: 100vh;
+	background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
+				url('../img/main-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.top-bar {
+	padding-top: 20px;
+}
+
+.logo-img {
+	margin-right: 10px;
+}
+
+.logo-title {
+	text-transform: uppercase;
+	color: var(--white);
+	font-weight: 700;
+}
+
+.menu-icon {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.menu-icon i {
+	font-size: 2rem;
+	color: var(--white);
+}
+
+.menu-mobile {
+	position: relative;
+}
+
+.burger-menu {
+	position: absolute;
+	right: 0;
+	top: -9999px;
+/*	background: #fff;
+*/}
+
+.show-menu {
+	top: 50px;
+}
+
+.main-menu {
+	list-style: none;
+}
+
+.main-menu li {
+	color: rgba(255, 255,255,0.9);
+	/*min-width: 140px;
+	height: 35px;
+	padding: 3px;
+	margin-bottom: 4px;*/
+	width: 100vh;
+	background-color: rgba(255, 255,255,0.3);
+	text-transform: uppercase;
+	height: 40px;
+	padding: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+
+}
+
+.btn__login {
+
+	min-width: 100px;
+	height: 35px;
+	padding: 3px;
+	text-transform: uppercase;
+	border: 2px solid white;
+	border-radius: 6px;
+
+}
+.btn__link{
+	display: block;
+text-decoration: none;
+color: white;
+text-align: center;
+}
+

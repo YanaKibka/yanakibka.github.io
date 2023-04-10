@@ -1,0 +1,35 @@
+@import url('_variables.css');
+@import url('_header.css');
+
+/*Global styles*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--main-font);
+}
+
+.page-wrap {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.content-wrap {
+	padding: 0 15px;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.hide {
+	display: none !important;
+}
