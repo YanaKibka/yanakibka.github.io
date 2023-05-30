@@ -1,7 +1,15 @@
+@font-face {
+	font-family: "Garlic";
+	src: url("../fonts/Graphik-Font-Family/GraphikRegular.otf");
+		
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	list-style: none;
 
 }
 
@@ -20,11 +28,9 @@ body {
 
 
 .wrapper {
-	/* width: 100vw; */
 	margin: 0 auto;
 	background: #19191B;
 }
-
 
 .menu {
 	display: flex;
@@ -40,9 +46,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: end ;
-	/*width: 24px;
-	height: 24px;*/
-
+	
 }
 
 
@@ -51,12 +55,13 @@ body {
 	align-items: center;
 	gap:4px;
 }
-.logo_icon {
 
+.logo_icon {
 	width: 27px;
 	height: 27px;
 
 }
+
 .logo_icon img {
 	display: block;
 	width: 100%;
@@ -66,37 +71,35 @@ body {
 	font-size: 28px;	
 	font-weight: 700;
 	font-family:Montserrat;
-	Line height: 39px;
-	color: white;
+	line-height: 39px;
+	color:white;
 }
 
+.pic_block{
+	background: url(../img/Group\ 162549.svg);
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 .pic_block img{
 	display: block;
 	width: 100%;
+	object-fit: cover;
+
 }
-
-
-
 
 
 .land_menu {
-	display: none;
+
 }
 .land_menu_list,
 .btn_menu {
- 	display: none;
 }
 
 /*  ----------------------------------------
 ---- mainblock with content------------------*/
 
-/*.content_wrap {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 auto;
-	padding:0 24px;
-}*/
+
 .block {
 	display: flex;
 	flex-direction: column;
@@ -107,6 +110,7 @@ body {
 .main_block {
 	
 }
+
 h1 {
 	width: 100%;
 	min-height: 189px;
@@ -120,8 +124,6 @@ h1 {
 
 }
 
-
-
 .par_text{
 	width: 100%;
 	font-size:16px ;
@@ -130,7 +132,6 @@ h1 {
 	color: rgba(255, 255, 255, 0.7);
 	
 }
-
 
 /*як краще, задавати min-height, чи ні,
  щоб кнопка стрибала, чи ні?
@@ -170,14 +171,6 @@ background-color: #5454D4;
 
 }
 
-.pic_block {}
-
-/*.choice_block {
-	width: 100%;
-	
-}*/
-
-
 
 .title  {
 	width: 100%;
@@ -201,13 +194,11 @@ title_choice і .choice_block p  */
 	margin-bottom: 50px;
 }
 
-/*як позиціонувати трикутник, до чого? він змінює положення в
-різних дизайнах.*/
 .video_preview {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-/*margin-left: 24px;*/
+
 }
 
 /*чим верстати блок з відео? 
@@ -218,12 +209,10 @@ title_choice і .choice_block p  */
 /*чому на title_service не діє падінг 
 загальний від контернт врапу?
 */.title_service {
-	padding: 140px 24px 50px;
+	padding: 0px 24px 50px;
 
 }
 
-/*яку ширину блока брати,
- меншу чи більшу (скрін)?*/
 
 .servises_container {
 	display: flex;
@@ -235,7 +224,25 @@ title_choice і .choice_block p  */
 
 .service_block {
 	align-items: center;
+	position: relative;
+	margin-top: 140px;
 
+}
+.triangle{
+	position: absolute;
+	top: -75px;
+	left: 20px;
+}
+.icon_plus2 {
+	position: absolute;
+	left: 24px;
+	bottom: -17px;
+}
+.icon_plus3{
+
+	position: absolute;
+	top: 93px;
+	right: 10px;
 }
 /*прибрати марджин у останнього
 */
@@ -243,18 +250,20 @@ title_choice і .choice_block p  */
 /*як з'являється бордер, якого я не дадавала?
 */.service_item_container {
 	margin-bottom: 24px;
-	padding: 0px 5px;
-	
+	/* padding: 0px 5px; */
+	max-width: 80%;
 }
 
 
-
+/*текст в сервіс-айтем переноситься не як у дизайні
+*/
 
 .servise_item {
 display: flex;
 flex-direction: column;
 align-items: center;
 max-width: 384px;
+padding: 48px 0px;
 }
 
 .service_icon {
@@ -279,8 +288,28 @@ max-width: 384px;
 	line-height: 28px;
 	text-align: center;
 }
-.awesome_block {}
-.title_choice_awesome {}
+.awesome_block {
+	min-height: 540px;
+	position: relative;
+	margin-bottom: 140px;
+	margin-top: 140px;
+}
+.circles_1 {
+	position: absolute;
+	top: 51px;
+	right:24px;
+}
+.zig-zag {
+	background: url(../zig-zag.png);
+	left: 33px;
+	bottom: -45px;
+	width: 62px;
+	height: 18px;
+}
+.title_choice_awesome {
+	color: rgba(255, 255, 255, 0.8);
+	
+}
 
 .slider_bcg {
 	width: 100%;
@@ -305,138 +334,106 @@ max-width: 384px;
  	width: 38px;
 	height: 38px;
 	border-radius: 50%;
+	line-height: 38px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
  }
 .left {
 	background-color:rgba(255, 255, 255, 0.2);
 	margin-right: 12px;
+	transform: rotate(180deg);
 }
 
 .right {
 	background-color: #5454D4;
+
+	
 }
 
 .contact_block {
 	min-height: 416px;
+	background-color: rgba(30, 30, 32, 0.5);
+	position: relative;
 
 }
+
 
 .title_contact {
-	padding: ;
+	padding-top: 80px;
+	
 }
+.absolute {
+position: absolute;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.icon_plus {
+	top: 12px;
+	right: 29px;
+	background: url(../Icon_plus.png);
+	width: 28px;
+	height: 28px;
 
+}
+.circles{
+	position: absolute;
+	left: 9px;
+	bottom: 12px;
+
+}
 .btn_contact {
 	justify-content: center;
 	border-radius: 4px;
 	margin-top: 50px;
 
 }
-.text-decoration {}
-.btn_servises_text {}
 
-
-
-
-.logo_footer {
-	
-}
-
-.logo_icon {}
-
-.logo_text {}
-
-.footer_land {
-	width: 100%;
+.mobile_menu_list{
 	display: flex;
-	justify-content: space-between;
-}
-
-.footer_list {}
-
-.text-decoration {}
-
-.copywrite {}
-
-
-
-/*
-.wrapper { 
-	width: 100%;
-	max-width: 1440px;
-	margin: 0 auto;
-	background: #19191B;
-}
-
-.content_wrap{
-width: 100%;
-	max-width: 1200px;
-	margin-top: 50px;
-	margin-right: 120px;
-	margin-left: 120px;
-}
-.menu {
-	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
-
-}
-.logo {
-	display: flex;
-	align-items: center;
-}
-.logo_icon {
-	width: 40px;
-	height: 40px;
-	margin-right: 8px;
-}
-.logo_text {
-
-font-size: 28px;	
-font-weight: 700;
-font-family:Montserrat;
-Line height: 39.2px;
-color: white;
+	gap: 40px;
+	padding: 40px 0px;
 
 }
 
-.land_menu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.land_menu_list {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	width: 532px;
-
-	
-}
-
-.land_menu_list li a {
+.mobile_menu_list li a{
+color: rgb(255, 255, 255, 0.7);
 font-size: 18px;
-font-weight: 400;
-color: rgba(255, 255, 255, 0.7);
-height: 25px;
 }
-/*
--чи можна міряти відстань від шрифта?
- -активний пункт меню виділяти скриптом?
 
+.mobile_menu_list{
+	display: none;
+}
 
-
-.btn_menu {
+.footer_mobile{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	width: 157px;
-	height: 44px;
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 5px;
-
-}
-.btn_menu a{
-	color: rgb(255, 255, 255);
-
+	gap: 40px;
+	margin-top: 140px;
+	padding-bottom: 50px;
 }
 
-*/
+.footer_list{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+
+.copywrite {
+	font-size: 18px;
+	color: white;
+	font-family: "Garlic", Arial, sans-serif;
+
+}
+
+.footer_list a {
+	color: rgb(255, 255, 255, 0.7);
+	font-size: 18px;
+
+}
