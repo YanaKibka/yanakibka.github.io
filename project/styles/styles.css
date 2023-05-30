@@ -295,12 +295,14 @@ padding: 48px 0px;
 	margin-top: 140px;
 }
 .circles_1 {
-	position: absolute;
 	top: 51px;
 	right:24px;
+	width: 40px;
+	height: 46px;
+	background: url(../img/circles.png)
 }
 .zig-zag {
-	background: url(../zig-zag.png);
+	background: url(../img/zig-zag.png);
 	left: 33px;
 	bottom: -45px;
 	width: 62px;
@@ -372,15 +374,17 @@ background-position: center;
 .icon_plus {
 	top: 12px;
 	right: 29px;
-	background: url(../Icon_plus.png);
+	background-image: url(../img/Icon_plus.png);
 	width: 28px;
 	height: 28px;
 
 }
 .circles{
-	position: absolute;
 	left: 9px;
 	bottom: 12px;
+	width: 40px;
+	height: 46px;
+	background: url(../img/circles.png)
 
 }
 .btn_contact {
