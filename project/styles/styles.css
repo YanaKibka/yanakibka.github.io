@@ -28,8 +28,11 @@ body {
 
 
 .wrapper {
-	margin: 0 auto;
-	background: #19191B;
+	
+		width: 100%;
+		max-width: 1440px;
+		margin: 0 auto;
+		background: #19191B;
 }
 
 .menu {
@@ -88,14 +91,31 @@ body {
 
 }
 
-
-.land_menu {
-
-}
-.land_menu_list,
-.btn_menu {
+.land_main_block{
+	
 }
 
+
+@media (min-width: 768px){
+
+		
+	.content_wrap {
+		max-width: 1200px;
+		margin-top: 50px;
+		margin-right: 120px;
+		margin-left: 120px;
+	
+
+}	
+
+.land_main_block {
+	display: flex;
+}
+
+.main_block {
+	max-width: 582px;
+}
+}
 /*  ----------------------------------------
 ---- mainblock with content------------------*/
 
@@ -133,9 +153,7 @@ h1 {
 	
 }
 
-/*як краще, задавати min-height, чи ні,
- щоб кнопка стрибала, чи ні?
-*/
+
 .par_text_main {
 	min-height: 96px;
 
@@ -229,18 +247,24 @@ title_choice і .choice_block p  */
 
 }
 .triangle{
-	position: absolute;
 	top: -75px;
 	left: 20px;
+	background-image: url(../img/triangle.svg);
+	width: 46px;
+	height: 46px;
+	
+}
+.icon_p {
+background-image: url(../img/icon_plus_svg.svg);
+width: 28px;
+height: 28px;
 }
 .icon_plus2 {
-	position: absolute;
 	left: 24px;
 	bottom: -17px;
+	
 }
 .icon_plus3{
-
-	position: absolute;
 	top: 93px;
 	right: 10px;
 }
@@ -374,10 +398,7 @@ background-position: center;
 .icon_plus {
 	top: 12px;
 	right: 29px;
-	background-image: url(../img/Icon_plus.png);
-	width: 28px;
-	height: 28px;
-
+	
 }
 .circles{
 	left: 9px;
