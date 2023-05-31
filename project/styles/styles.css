@@ -90,10 +90,10 @@ body {
 	object-fit: cover;
 
 }
-
+ 
 
 button.button_servises_land{
-	display: none;
+	
 	justify-content: space-between;
 	margin-top: 50px;
 	padding: 0 20px;
@@ -110,11 +110,10 @@ button.button_servises_land{
 	padding: 0 24px;
 }
 .main_block {
-	
+
 }
 
 h1 {
-	
 	min-height: 189px;
 	font-family: "Garlik", Arial, sans-serif;	font-size:42px ;
 	line-height: 63px;
@@ -476,4 +475,10 @@ font-size: 18px;
 	.button.btn_servises {
 		display: none;
 	}
+}
+
+@media (min-width: 460px) {
+h1 {
+max-width: 90%;
+}
 }
