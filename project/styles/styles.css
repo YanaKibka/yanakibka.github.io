@@ -91,30 +91,12 @@ body {
 
 }
 
-.land_main_block{
-	
-}
 
-
-@media (min-width: 768px){
-
-		
-	.content_wrap {
-		max-width: 1200px;
-		margin-top: 50px;
-		margin-right: 120px;
-		margin-left: 120px;
-	
-
-}	
-
-.land_main_block {
-	display: flex;
-}
-
-.main_block {
-	max-width: 582px;
-}
+button.button_servises_land{
+	display: none;
+	justify-content: space-between;
+	margin-top: 50px;
+	padding: 0 20px;
 }
 /*  ----------------------------------------
 ---- mainblock with content------------------*/
@@ -132,10 +114,9 @@ body {
 }
 
 h1 {
-	width: 100%;
+	
 	min-height: 189px;
-	font-family: ;
-	font-size:42px ;
+	font-family: "Garlik", Arial, sans-serif;	font-size:42px ;
 	line-height: 63px;
 	font-weight: 700;
 	color: rgb(255, 255, 255);
@@ -145,7 +126,7 @@ h1 {
 }
 
 .par_text{
-	width: 100%;
+	
 	font-size:16px ;
 	line-height: 24px;
 	font-weight: 400;
@@ -154,7 +135,7 @@ h1 {
 }
 
 
-.par_text_main {
+.par_text.par_text_main {
 	min-height: 96px;
 
 }
@@ -180,9 +161,6 @@ background-color: #5454D4;
 	font-weight: 700;
 }
 
-/*не посунулась стрілка
-*/
-
 .arrow {
 	display: block;
 	margin-right: 8px;
@@ -191,7 +169,6 @@ background-color: #5454D4;
 
 
 .title  {
-	width: 100%;
 	font-size: 36px;
 	font-weight: 700;
 	font-family: ;
@@ -461,4 +438,42 @@ font-size: 18px;
 	color: rgb(255, 255, 255, 0.7);
 	font-size: 18px;
 
+}
+
+@media (min-width: 768px) {
+
+	.content_wrap {
+		max-width: 1200px;
+		margin-top: 50px;
+		margin-right: 120px;
+		margin-left: 120px;
+
+	}
+
+	.land_main_block {
+		display: flex;
+	}
+
+	.main_block {
+		max-width: 582px;
+	}
+
+	h1 {
+		font-size: 80px;
+		line-height: 84px;
+		font-weight: 800;
+		color: rgb(255, 255, 255);
+		padding-bottom: 24px;
+		padding-top: 148px;
+
+	}
+
+	.par_text_main {
+		font-size: 21px;
+		line-height: 39px;
+	}
+
+	.button.btn_servises {
+		display: none;
+	}
 }
