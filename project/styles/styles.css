@@ -39,9 +39,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 40px;
-	padding-left: 24px;
-	padding-right: 24px;
+	padding: 40px 24px 66px 24px;
 
 }
 
@@ -170,7 +168,6 @@ h1 {
 	font-weight: 700;
 	color: rgb(255, 255, 255);
 	padding-bottom: 30px;
-	padding-top: 66px;
 
 }
 
@@ -488,12 +485,19 @@ font-size: 18px;
 	font-size: 18px;
 
 }
+.land {
+	display: none;
+}
+@media (min-width: 1100px) {
+.land {
+		display: flex;
+	}
 
-@media (min-width: 768px) {
-
+.menu{
+	display: none;
+}
 	.content_wrap {
 		max-width: 1200px;
-		margin-top: 50px;
 		margin-right: 120px;
 		margin-left: 120px;
 
@@ -513,7 +517,6 @@ font-size: 18px;
 		font-weight: 800;
 		color: rgb(255, 255, 255);
 		padding-bottom: 24px;
-		padding-top: 148px;
 
 	}
 
@@ -530,7 +533,22 @@ font-size: 18px;
 			display: flex;
 			margin-left: 24px;
 }
+.footer_mobile{
+	display: none;
+}
 
+.footer_land {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 100px 120px 100px 120px;
+}
+.footer_list_land a {
+	color: rgb(255, 255, 255, 0.7);
+		font-size: 18px;
+		font-weight: 400;
+}
 
 @media (min-width: 460px) {
 h1 {
