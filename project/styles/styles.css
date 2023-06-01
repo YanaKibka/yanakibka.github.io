@@ -78,6 +78,52 @@ body {
 	color:white;
 }
 
+/* ---------------landmenu----------------------- */
+.land {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 120px 146px 120px;
+}
+
+
+.land_menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.land_menu_list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 532px;
+}
+
+.land_menu_list li a {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+	height: 25px;
+}
+
+.btn_menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 157px;
+	height: 44px;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 5px;
+
+}
+
+.btn_menu a {
+	color: rgb(255, 255, 255);
+
+}
+
+
 .pic_block{
 	background: url(../img/Group\ 162549.svg);
 	background-size: 80%;
@@ -92,11 +138,15 @@ body {
 }
  
 
-button.button_servises_land{
-	
+.button.button_servises_land{
+	display: none;
 	justify-content: space-between;
 	margin-top: 50px;
 	padding: 0 20px;
+}
+
+a.button.button_servises_land{
+
 }
 /*  ----------------------------------------
 ---- mainblock with content------------------*/
@@ -475,7 +525,12 @@ font-size: 18px;
 	.button.btn_servises {
 		display: none;
 	}
+
+		.button.button_servises_land {
+			display: flex;
+			margin-left: 24px;
 }
+
 
 @media (min-width: 460px) {
 h1 {
